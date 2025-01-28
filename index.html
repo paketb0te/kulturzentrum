@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulturzentrum Lichtblick</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-gray: #f0f4f8;
+            --secondary-color: #2ecc71;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        nav {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white !important;
+            transition: transform 0.2s ease-in-out;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: white !important;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .calendar {
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .event {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--secondary-color);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .event:hover {
+            transform: translateX(5px);
+        }
+
+        .event-date {
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kulturzentrum Lichtblick</h1>
+        <p>Ihr Zentrum für Kunst, Kultur und Begegnung</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Start</a></li>
+            <li><a href="#events">Veranstaltungen</a></li>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Willkommen im Kulturzentrum Lichtblick</h2>
+            <p>Das Kulturzentrum Lichtblick ist ein Ort der Begegnung, der Kunst und der kulturellen Vielfalt. Wir
+                bieten ein breites Spektrum an Veranstaltungen für Jung und Alt.</p>
+        </section>
+
+        <section id="events" class="calendar">
+            <h2>Veranstaltungskalender</h2>
+
+            <div class="event">
+                <div class="event-date">2. Februar 2025</div>
+                <div class="event-title">Klezmer-Abend mit "Northern Freylekhs"</div>
+                <p>Bekannt fuer ihre energiegeladenen Auftritte und ihren warmen, facettenreichen Klang, lassen sich die
+                    Musiker:innen von typisch skandinavischen "Hygge"-Momenten inspirieren - von Saunaabenden bis hin zu
+                    entspannten Sessions auf Daenemarks Fjorden. Ihr einzigartiger Stil sorgt fuer einen Abend voller
+                    Leidernschaft, Melodie und Emotion.</p>
+            </div>
+
+            <!-- <div class="event">
+                <div class="event-date">22. Februar 2025</div>
+                <div class="event-title">Kunstausstellung: "Farben des Lebens"</div>
+                <p>Lokale Künstler präsentieren ihre Werke zum Thema "Natur und Mensch".</p>
+            </div> -->
+
+            <!-- <div class="event">
+                <div class="event-date">1. März 2025</div>
+                <div class="event-title">Theateraufführung: "Der kleine Prinz"</div>
+                <p>Das Jugendensemble spielt den zeitlosen Klassiker von Antoine de Saint-Exupéry.</p>
+            </div> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Kulturzentrum Lichtblick | Musterstraße 123 | 12345 Musterstadt | Tel: 01234-567890</p>
+        <p>&copy; 2025 Kulturzentrum Lichtblick</p>
+    </footer>
+</body>
+
+</html>
