@@ -11,6 +11,7 @@
             --accent-color: #e74c3c;
             --light-gray: #f0f4f8;
             --secondary-color: #2ecc71;
+            --warning-color: #f39c12;
         }
 
         body {
@@ -105,6 +106,31 @@
             margin-bottom: 0.5rem;
         }
 
+        .warning-banner {
+            background-color: var(--warning-color);
+            color: white;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            animation: attention 2s infinite;
+        }
+
+        @keyframes attention {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.02);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
         footer {
             background-color: var(--primary-color);
             color: white;
@@ -151,7 +177,8 @@
             <div class="event">
                 <div class="event-date">Mittwoch, 1. Januar 2025</div>
                 <div class="event-title">Spa-Abend</div>
-                <p>Wir starten den Abend mit Sauna, Whirlpool und Kerzenbecken, begleitet von beruhigenden Walgesängen (sound by DJ Maigl Sens).
+                <p>Wir starten den Abend mit Sauna, Whirlpool und Kerzenbecken, begleitet von beruhigenden Walgesängen
+                    (sound by DJ Maigl Sens).
                     Anschliessend könnt Ihr in der Lounge-Area eure Visagen mit Gesichtsmasken verwöhnen,
                     während wir Kurzfilm-Klassiker mit lustigen Tieren auf der 8K-Super-HD-Leinwand zeigen.</p>
                 <p>Hinweis: Die Wasserrutsche bleibt aufgrund dieser Veranstaltung geschlossen.</p>
@@ -167,7 +194,8 @@
             </div>
 
             <div class="event">
-                <div class="event-date">Sonntag, 9. Februar 2025</div>
+                <div class="warning-banner">⚠️ Achtung: Termin wurde verlegt!</div>
+                <div class="event-date">Samstag, 1. Februar 2025</div>
                 <div class="event-title">Patifu-Party mit Verkostung</div>
                 <p>Unsere Freunde von <a href="https://www.patifu.de">patifu.de</a> waren unterwegs und haben 10
                     Neuheiten aus der Welt der Patifus für euch mitgebracht - und Ihr dürft sie alle probieren!</p>
